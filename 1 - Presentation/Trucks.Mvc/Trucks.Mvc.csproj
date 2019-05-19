@@ -18,9 +18,4 @@
     <ProjectReference Include="..\..\3 - Infrastructure\Trucks.Data\Trucks.Data.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Resources\Views\Trucks\" />
-  </ItemGroup>
-
 </Project>
