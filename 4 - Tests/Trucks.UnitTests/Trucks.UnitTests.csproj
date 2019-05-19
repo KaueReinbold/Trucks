@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Presentation\Mvc\Controllers\TruckControllerUnitTests.cs~RF2e177af.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\1 - Presentation\Trucks.Mvc\Trucks.Mvc.csproj" />
+    <ProjectReference Include="..\..\2 - Application\Trucks.Application\Trucks.Application.csproj" />
+    <ProjectReference Include="..\..\3 - Infrastructure\Trucks.Data\Trucks.Data.csproj" />
+    <ProjectReference Include="..\..\3 - Infrastructure\Trucks.Domain\Trucks.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+﻿@model Trucks.Application.ViewModels.TruckViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+
+    <partial name="Trucks/_TruckViewPartialView" model="Model" />
+
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
